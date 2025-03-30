@@ -1,45 +1,43 @@
-
 class Tree {
     constructor(species) {
-      this.species = species;
+        this.species = species;
     }
-  
+
     static definition() {
-      return "A tree is a perennial plant with an elongated stem, or trunk, supporting branches and leaves.";
+        return "A tree is a perennial plant with an elongated stem, or trunk, supporting branches and leaves.";
     }
-  }
-  
-  class Deciduous extends Tree {
+}
+
+class Deciduous extends Tree {
     constructor(species, name) {
-      super(species); 
-      this.name = name;
+        super(species);
+        this.name = name;
     }
-  
+
     static definition() {
-      return super.definition() + " Deciduous trees shed their leaves annually.";
+        return super.definition() + " Deciduous trees shed their leaves annually.";
     }
-  }
-  
-  class Evergreen extends Tree {
+}
+
+class Evergreen extends Tree {
     constructor(species, name) {
-      super(species); 
-      this.name = name;
+        super(species);
+        this.name = name;
     }
-  
+
     static definition() {
-      return super.definition() + " Evergreens keep their leaves all year round.";
+        return super.definition() + " Evergreens keep their leaves all year round.";
     }
-  }
-  
-  const oak = new Deciduous("Quercus", "Oak");
-  console.log(oak.species); 
-  console.log(oak.name); 
-  console.log(Deciduous.definition()); 
-  ng branches and leaves. Deciduous trees shed their leaves annually."
-  
-  const pine = new Evergreen("Pinus", "Pine");
-  console.log(pine.species); 
-  console.log(pine.name); 
-  console.log(Evergreen.definition());
-  
-  
+}
+
+const oak = new Deciduous("Quercus", "Oak");
+console.log(oak.species); 
+console.log(oak.name); 
+console.log(Deciduous.definition()); 
+
+
+const pine = new Evergreen("Pinus", "Pine");
+console.log(pine.species); 
+console.log(pine.name); 
+console.log(Evergreen.definition()); 
+
